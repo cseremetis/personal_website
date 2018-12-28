@@ -1,0 +1,47 @@
+//logo font
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+
+//general font
+@import url('https://fonts.googleapis.com/css?family=Arsenal|Audiowide');
+
+$color: #b30000; //theme color
+$general_font: 'Arsenal', sans-serif; //content font
+$logo_font: 'Audiowide', cursive; //header font
+$h1-size: 60px;
+$text-size: 20px;
+
+body {
+  padding: 50px;
+}
+
+p, a, li, ul, h3 {
+  font-size: $text-size;
+  font-family: $general_font !important;
+}
+
+h1, h2 {
+  font-family: $logo_font !important;
+}
+
+hr {
+  width: 100px;
+	border-top: 1px;
+	border-color: $color !important;
+	margin-bottom: 10px !important;
+}
+
+#profile {
+  border-radius: 200px;
+  height: 50%;
+  width: 50%;
+}
+
+.c-header {
+  color: $color;
+  font-family: $logo_font;
+  font-size: $h1-size;
+}
+
+#pers-info {
+  position: relative;
+}

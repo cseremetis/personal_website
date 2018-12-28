@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Audiowide");
+@import url("https://fonts.googleapis.com/css?family=Arsenal|Audiowide");
+body {
+  padding: 50px; }
+
+p, a, h3 {
+  font-size: 20px;
+  font-family: "Arsenal", sans-serif !important; }
+
+h1, h2 {
+  font-family: "Audiowide", cursive !important; }
+
+a {
+  color: #b30000; }
+
+hr {
+  width: 100px;
+  border-top: 1px;
+  border-color: #b30000 !important;
+  margin-bottom: 10px !important; }
+
+.container {
+  margin-top: 100px; }
+
+#profile {
+  border-radius: 200px;
+  height: 50%;
+  width: 50%; }
+
+.c-header {
+  color: #b30000;
+  font-family: "Audiowide", cursive;
+  font-size: 60px; }
+
+#canvas {
+  margin-top: -60%;
+  margin-bottom: -10%;
+  align-items: center; }
+
+#text_box {
+  padding-left: 25%;
+  padding-right: 25%; }
+
+#prev {
+  position: relative;
+  right: 80%; }
+
+#contact {
+  margin-top: 20%; }
+
+/*# sourceMappingURL=style.css.map */

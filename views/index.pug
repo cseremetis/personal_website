@@ -1,0 +1,84 @@
+//- Christian Seremetis
+//- 26 December 2018
+//- Personal portfolio/website
+//- See package.json for more website details
+
+extends layout
+
+block content
+  body
+    div.row
+      h1.text-center.c-header About Me
+      hr
+    div.container#intro
+      div.row
+        div.col-lg-6.text-center
+          img#profile(src="images/chris.jpg")
+        div.col-lg-6
+          p.
+            Welcome! My name is Christian Seremetis and I am a Sophomore at Johns Hopkins University studying Computer Science and economics. My interests include software development of all types from web development in Ruby/JS/Python to embedded systems programming in C to data science applications in R to virtual reality development. This website was built using Node.js for server-side operations, P5.js for animations, and SCSS for styles. Thanks for visiting and be sure to take a look at my portfolio below! I display each item using a javascript application called "Spinwheel" that I developed in the winter of 2018-the github repo for which is right here:
+    div.container#portfolio
+      h1.text-center.c-header Portfolio
+      hr
+      div.container(style="padding-top: 20px;")
+        //-this is the canvas where we'll be drawing our spinwheel
+        div.col-lg-6#canvas
+        div.col-lg-6#caption
+    div#resume(style="margin-top: 25%;")
+      h1.text-center.c-header Skills and Course Info
+      hr
+      div.container
+        div.col-lg-6
+          h2 Areas of Knowledge/Interest:
+          ul
+            li 
+              p Virtual Reality Development (with A-Frame and Three.JS Javascript VR frameworks)
+            li 
+              p Embedded Development (with STM32 or Raspberry Pi)
+            li 
+              p Data Science (in R or Python)
+            li 
+              p Full-Stack Web Development (with Ruby on Rails, PHP, and Node.js)
+            li 
+              p Front-End Web Development (with SCSS, Pug, CommonJS, JQuery, React.js, P5.js, and more)
+            li 
+              p General Software Development (with Java, C, or C++. Remedial knowledge of C# and Visual Studio 2017)
+        div.col-lg-6
+          h2 Relevant Course Experience:
+          ul
+            li
+              p Leading Innovation Design Team (a design team to provide a proof-of-concept for a privately-sponsored project. My team is building a drone that can autonomously navigate a warehouse while taking inventory via an onboard RFID reader. The project involved embedded systems development, data science, and lots of teamwork)
+            li
+              p Data Structures (taught in Java, gained experience writing several data structures implementations such as Graphs, AVL Trees, Heaps, Treaps, Stacks, Queues, etc.)
+            li 
+              p Intermediate Programming (a course in C/C++ covering the intricacies of each language. This course required students to build large, scalable projects that included thousands of lines of code. These projects are private repos, if you are interested in seeing the source code feel free to reach out with the contact form at the bottom of this site)
+    div#contact(style="margin-top: 10%;")
+      h1.text-center.c-header Contact
+      hr
+      div.container(style="margin-top: 5em;")
+        div.col-lg-6
+          form(action="/email" method="POST")
+            label Name:
+            br
+            input.form-control(type="input" id="name" name="name")
+            br
+            label Email Address:
+            br
+            input.form-control(type="input" id="email-address" name="email_address")
+            br
+            label Message:
+            br
+            textarea.form-control(rows="10" id="content" name="content")
+            br
+            input.btn.btn-default(type="submit")
+        div.col-lg-6
+          div#pers-info(style="margin-right: 100px; margin-left: 100px;")
+            p.
+              Want to get in touch? Feel free to reach out through the contact form on the left or by contacting me on any of the links below. Interested in seeing more code? See my Github (listed below) and feel free to clone/fork any interesting repositories. Thank you for visiting and have a great day.
+            br
+            p Email: <a href="mailto:csereme1@jhu.edu">csereme1@jhu.edu</a>
+            br
+            p Github: <a href="http://github.com/cseremetis">github.com/cseremetis</a>
+            br
+            p Linkedin: <a href="http://linkedin.com/in/christian-seremetis">linkedin.com/in/christian-seremetis</a>
+            br
