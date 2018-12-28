@@ -24,8 +24,8 @@ router.post('/email', function(req, res, next) {
   });
 
   let mailOptions = {
-      from: 'christianseremetis@gmail.com',
-      to: 'christianseremetis@gmail.com',
+      from: process.env.GMAIL,
+      to: process.env.GMAIL,
       subject: `new contact message from ${req.body.name}, email: ${req.body.email_address}`,
       text: req.body.content
   };
